@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2? family= Raleway:wght@200 & display=swap');
 body
 {
-
+    font-family : 'Raleway', sans-serif ;
 }
 header
 {
@@ -22,6 +23,11 @@ header > nav > ul
 header > nav > ul > li > a
 {
     padding: 20px;
+    color: #0065FC;
+}
+header > nav > ul > li > a > div
+{
+    color:gray ;
 }
 .section1
 {
@@ -115,6 +121,7 @@ aside
     flex-direction:column; 
     max-width: 30%;
     background-color: #F2F2F2;
+    margin: 20px 20px 20px 20px;
 }
 aside > ul
 {
@@ -144,6 +151,7 @@ aside > ul > li>  .hebergement
 display: flex;
 flex-direction: column;
 background-color: #F2F2F2;
+margin: 20px 20px 20px 20px;
 }
 .section3 > ul 
 {
