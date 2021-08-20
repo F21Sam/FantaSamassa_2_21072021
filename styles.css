@@ -25,10 +25,6 @@ header > nav > ul > li > a
     padding: 20px;
     color: #0065FC;
 }
-header > nav > ul > li > a > div
-{
-    color:gray ;
-}
 .section1
 {
     display: flex;
@@ -39,6 +35,11 @@ header > nav > ul > li > a > div
     display: flex;
     flex-direction: row;
     align-items: center; 
+}
+#recherche > p
+{
+    color: white;
+    background-color:#0065FC ;
 }
 #vacances
 {
@@ -60,6 +61,11 @@ header > nav > ul > li > a > div
     align-items: center;
     padding-right: 30px;
 }
+#vacances > ul > div > li
+{
+    padding: 20px 20px 20px 20px;
+    border-radius: ;
+}
 .icone
 {
     color:#0065FC ;
@@ -70,13 +76,16 @@ header > nav > ul > li > a > div
 .section2
 {
     display: flex;
-    flex-direction:column;  
-    
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
-#partie1 , #partie2 ,#partie3
+.grandeSection
 {
+    display: flex;
+    flex-direction:column;  
     background-color: #F2F2F2;
-    max-width: 60%;
+    width: 60%;
 }
 #partie2
 {
@@ -107,7 +116,7 @@ background-color: white;
 }
 .inactive
 {
-    color: gray;
+    color: #F2F2F2;
 }
 #partie3
 {
@@ -121,7 +130,6 @@ aside
     flex-direction:column; 
     max-width: 30%;
     background-color: #F2F2F2;
-    margin: 20px 20px 20px 20px;
 }
 aside > ul
 {
