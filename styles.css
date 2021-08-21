@@ -2,6 +2,7 @@
 body
 {
     font-family : 'Raleway', sans-serif ;
+    padding: 40px;
 }
 header
 {
@@ -36,7 +37,13 @@ header > nav > ul > li > a
     flex-direction: row;
     align-items: center; 
 }
-#recherche > p
+#recherche > .map
+{
+    padding:10px 20px 10px 10px ;
+    border-radius: 10px/20px;
+    background-color: #F2F2F2;
+}
+#recherche > .bouton-submit
 {
     color: white;
     background-color:#0065FC ;
@@ -45,6 +52,7 @@ header > nav > ul > li > a
 {
     display: flex;
     flex-direction:row;
+    align-items: center;
 
 }
 #vacances > ul
@@ -63,8 +71,8 @@ header > nav > ul > li > a
 }
 #vacances > ul > div > li
 {
-    padding: 20px 20px 20px 20px;
-    border-radius: ;
+border: 1px #F2F2F2 solid;
+border-radius: ;
 }
 .icone
 {
@@ -73,6 +81,18 @@ header > nav > ul > li > a
     border-radius: 50px;
    background-color: #DEEBFF ; 
 }
+.info-content
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.info
+{
+    padding-right: 20px;
+    color:#0065FC ;
+}
+
 .section2
 {
     display: flex;
