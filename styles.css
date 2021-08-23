@@ -2,13 +2,14 @@
 body
 {
     font-family : 'Raleway', sans-serif ;
-    padding: 40px;
 }
 header
 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 #logo > img
 {
@@ -25,6 +26,11 @@ header > nav > ul > li > a
 {
     padding: 20px;
     color: #0065FC;
+}
+main
+{
+    padding-left: 40px;
+    padding-right: 40px;
 }
 .section1
 {
@@ -67,12 +73,13 @@ header > nav > ul > li > a
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-right: 30px;
+    margin: 20px;
+    border: 1px #F2F2F2 solid;
+    border-radius: 20px;
 }
 #vacances > ul > div > li
 {
-border: 1px #F2F2F2 solid;
-border-radius: ;
+padding: 10px;
 }
 .icone
 {
@@ -106,6 +113,7 @@ border-radius: ;
     flex-direction:column;  
     background-color: #F2F2F2;
     width: 60%;
+    border-radius: 20px;
 }
 #partie2
 {
@@ -125,31 +133,31 @@ flex-wrap: wrap;
 {
     margin: 0px 20px 20px 0px;
 background-color: white;
+border-radius: 20px;
 }
 #partie2 > ul > li > .hebergement > img
 {
     height: 120px;
+    border-radius: 20px 20px 0px 0px;
+
 }
 .active
 {
     color:#0065FC;
+    height: 10px;
 }
 .inactive
 {
     color: #F2F2F2;
-}
-#partie3
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    height: 10px;
 }
 aside
 {
     display: flex;
     flex-direction:column; 
-    max-width: 30%;
+    width: 30%;
     background-color: #F2F2F2;
+    border-radius: 20px;
 }
 aside > ul
 {
@@ -164,6 +172,7 @@ aside > ul > li>  .hebergement
     align-items: center;
     background-color: white;
     margin: 10px 50px 10px 10px;
+    border-radius: 20px;
 }
 #informations
 {
@@ -171,15 +180,13 @@ aside > ul > li>  .hebergement
 }
  aside > ul > li > .hebergement > img
 {
-    height: 90px;
+    height: 170px;
+    border-radius: 20px 0px 0px 20px;
 }
-
 .section3
 {
 display: flex;
 flex-direction: column;
-background-color: #F2F2F2;
-margin: 20px 20px 20px 20px;
 }
 .section3 > ul 
 {
@@ -187,14 +194,29 @@ display: flex;
 flex-direction: row;
 list-style: none;
 flex-wrap: wrap;
+justify-content: space-between;
 }
-.section3 > ul > li
+.section3 > ul > .activite > li
 {
-    padding: 30px;
+background-color: white;
+margin: 10px 0px 20px 0px;
+border: 1px #F2F2F2 solid;
+border-radius: 20px;
+
 }
-.section3 > ul > li > #activite > img
+.section3 > ul > .activite > li > img
 {
-    height: 200px;
+    height: 150px;
+    border-radius: 20px 20px 0px 0px;
+}
+.section3 > ul > .grand > li > img
+{
+height: 400px;
+}
+.section3 > ul > .activite
+{
+    display: flex;
+    flex-direction: column;
 }
 footer
 {
