@@ -10,6 +10,7 @@ header
     justify-content: space-between;
     padding-left: 40px;
     padding-right: 40px;
+    padding-top: 20px;
 }
 #logo > img
 {
@@ -24,8 +25,20 @@ header > nav > ul
 }
 header > nav > ul > li > a
 {
-    padding: 20px;
+    padding: 30px;
+    text-decoration: none;
+}
+header > nav > ul > li > a:hover
+{
     color: #0065FC;
+    border-top: 1px #0065FC solid;
+}
+header > nav > ul > div > li > a
+{
+    color:#0065FC;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 30px;
 }
 main
 {
@@ -46,13 +59,15 @@ main
 #recherche > .map
 {
     padding:10px 20px 10px 10px ;
-    border-radius: 10px/20px;
+    border-radius: 20px 0px 0px 20px;
     background-color: #F2F2F2;
 }
 #recherche > .bouton-submit
 {
     color: white;
     background-color:#0065FC ;
+    border-radius: 0px 20px 20px 0px;
+    
 }
 #vacances
 {
@@ -112,7 +127,7 @@ padding: 10px;
     display: flex;
     flex-direction:column;  
     background-color: #F2F2F2;
-    width: 60%;
+    width: 65%;
     border-radius: 20px;
 }
 #partie2
@@ -128,12 +143,14 @@ flex-direction: row;
 justify-content: space-between;
 list-style: none;
 flex-wrap: wrap;
+align-items: center;
 }
-#partie2 > ul > li
+#partie2 > ul > li > div
 {
-    margin: 0px 20px 20px 0px;
+ margin: 20px;   
 background-color: white;
 border-radius: 20px;
+padding: 5px;
 }
 #partie2 > ul > li > .hebergement > img
 {
@@ -155,7 +172,7 @@ aside
 {
     display: flex;
     flex-direction:column; 
-    width: 30%;
+    width: 32%;
     background-color: #F2F2F2;
     border-radius: 20px;
 }
@@ -182,6 +199,7 @@ aside > ul > li>  .hebergement
 {
     height: 170px;
     border-radius: 20px 0px 0px 20px;
+    padding: 5px;
 }
 .section3
 {
