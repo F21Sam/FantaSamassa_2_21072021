@@ -3,6 +3,23 @@ body
 {
     font-family : 'Raleway', sans-serif ;
 }
+h2
+{
+    font-size: 22px;
+}
+h4
+{
+    font-size: 19px;
+}
+p
+{
+    font-size: 15px;
+}
+.fas
+{
+    font-size: 15px;
+}
+/*en tête*/
 header
 {
     display: flex;
@@ -27,6 +44,7 @@ header > nav > ul > li > a
 {
     padding: 30px;
     text-decoration: none;
+    color: black;
 }
 header > nav > ul > li > a:hover
 {
@@ -40,33 +58,47 @@ header > nav > ul > div > li > a
     text-decoration: none;
     padding: 30px;
 }
-main
-{
-    padding-left: 40px;
-    padding-right: 40px;
-}
+
 .section1
 {
     display: flex;
     flex-direction:column;  
 }
+/*barre de recherche*/
 #recherche
 {
     display: flex;
     flex-direction: row;
-    align-items: center; 
+    align-items: center;
+    width: 400px; 
 }
 #recherche > .map
 {
-    padding:10px 20px 10px 10px ;
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 10px 0px 0px 10px;
     background-color: #F2F2F2;
+    height: 20px;
+    width: 20px;
+    padding: 10px 10px 10px 15px;
+}
+.search
+{
+    height: 40px;
+    width: 230px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    border: 0.5px #F2F2F2 solid ;
+    padding-left: 20px;
 }
 #recherche > .bouton-submit
 {
     color: white;
     background-color:#0065FC ;
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 0px 10px 10px 0px;
+    height: 40px;
+    width: 100px;
+    border: none;
+    cursor: pointer;
     
 }
 #vacances
@@ -74,7 +106,6 @@ main
     display: flex;
     flex-direction:row;
     align-items: center;
-
 }
 #vacances > ul
 {
@@ -88,18 +119,21 @@ main
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 20px;
-    border: 1px #F2F2F2 solid;
+    margin-right: 20px;
+    border: 2px #F2F2F2 solid;
     border-radius: 20px;
+    border-left: none;
 }
 #vacances > ul > div > li
 {
 padding: 10px;
+font-weight: bold;
+
 }
 .icone
 {
     color:#0065FC ;
-    padding:10px 10px 10px 10px ;
+    padding:15px 15px 15px 15px ;
     border-radius: 50px;
    background-color: #DEEBFF ; 
 }
@@ -111,8 +145,12 @@ padding: 10px;
 }
 .info
 {
-    padding-right: 20px;
+    padding: 10px 15px 10px 15px;
     color:#0065FC ;
+    border: 2px #F2F2F2 solid ;
+    border-radius: 50px;
+    margin-right: 10px;
+    font-size: 12px;
 }
 
 .section2
@@ -150,13 +188,19 @@ align-items: center;
  margin: 20px;   
 background-color: white;
 border-radius: 20px;
-padding: 5px;
+padding: 4px;
+box-shadow: 2px 2px 20px rgb(190, 192, 194);
+line-height: 1.5px;
 }
 #partie2 > ul > li > .hebergement > img
 {
     height: 120px;
     border-radius: 20px 20px 0px 0px;
 
+}
+.fa-star
+{
+    font-size: 12px;
 }
 .active
 {
@@ -175,6 +219,7 @@ aside
     width: 32%;
     background-color: #F2F2F2;
     border-radius: 20px;
+    align-items: flex-start;
 }
 aside > ul
 {
@@ -190,16 +235,21 @@ aside > ul > li>  .hebergement
     background-color: white;
     margin: 10px 50px 10px 10px;
     border-radius: 20px;
+    box-shadow: 2px 2px 20px rgb(190, 192, 194);
 }
 #informations
 {
     padding-left: 20px;
 }
+#informations > div
+{
+    height: 20px;
+}
  aside > ul > li > .hebergement > img
 {
-    height: 170px;
+    height: 155px;
     border-radius: 20px 0px 0px 20px;
-    padding: 5px;
+    margin: 4px;
 }
 .section3
 {
@@ -216,10 +266,10 @@ justify-content: space-between;
 }
 .section3 > ul > .activite > li
 {
-background-color: white;
 margin: 10px 0px 20px 0px;
 border: 1px #F2F2F2 solid;
 border-radius: 20px;
+box-shadow: 5px 5px 10px #F2F2F2;
 
 }
 .section3 > ul > .activite > li > img
@@ -242,4 +292,17 @@ footer
     display: flex;
     flex-direction:row;
     justify-content: space-between;
+}
+footer > div
+{
+    line-height: 1px;
+    margin: 30px;
+}
+#àpropos ,#noshebergements
+{
+    width: 25%;
+}
+#assistance
+{
+    width: 30%;
 }
