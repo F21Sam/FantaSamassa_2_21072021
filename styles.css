@@ -3,9 +3,11 @@ body
 {
     font-family : 'Raleway', sans-serif ;
 }
+
 h2
 {
     font-size: 22px;
+    margin-bottom: 1px
 }
 h4
 {
@@ -58,7 +60,11 @@ header > nav > ul > div > li > a
     text-decoration: none;
     padding: 30px;
 }
-
+main
+{
+    padding-left: 40px;
+    padding-right: 40px;
+}
 .section1
 {
     display: flex;
@@ -126,7 +132,8 @@ header > nav > ul > div > li > a
 }
 #vacances > ul > div > li
 {
-padding: 10px;
+padding-left: 10px;
+padding-right: 10px;
 font-weight: bold;
 
 }
@@ -167,6 +174,11 @@ font-weight: bold;
     background-color: #F2F2F2;
     width: 65%;
     border-radius: 20px;
+    padding-right: 30px;
+}
+.grandeSection > #partie1 > h2 ,.grandeSection > #partie3 > p 
+{
+    padding-left: 60px;
 }
 #partie2
 {
@@ -196,7 +208,11 @@ line-height: 1.5px;
 {
     height: 120px;
     border-radius: 20px 20px 0px 0px;
-
+}
+#infoHotels
+{
+    padding-left: 10px;
+    padding-bottom: 5px;
 }
 .fa-star
 {
@@ -216,7 +232,7 @@ aside
 {
     display: flex;
     flex-direction:column; 
-    width: 32%;
+    width: 30%;
     background-color: #F2F2F2;
     border-radius: 20px;
     align-items: flex-start;
@@ -251,6 +267,10 @@ aside > ul > li>  .hebergement
     border-radius: 20px 0px 0px 20px;
     margin: 4px;
 }
+aside > h2 ,.section3 > h2
+{
+    padding-left: 45px;
+}
 .section3
 {
 display: flex;
@@ -274,8 +294,14 @@ box-shadow: 5px 5px 10px #F2F2F2;
 }
 .section3 > ul > .activite > li > img
 {
-    height: 150px;
+    height: 160px;
     border-radius: 20px 20px 0px 0px;
+}
+.section3 > ul > .activite > li > h5
+{
+    padding-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 .section3 > ul > .grand > li > img
 {
@@ -286,6 +312,7 @@ height: 400px;
     display: flex;
     flex-direction: column;
 }
+/*pieds de page*/
 footer
 {
    background-color: #F2F2F2; 
