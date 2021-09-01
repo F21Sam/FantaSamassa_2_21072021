@@ -13,6 +13,7 @@ h2
 h4
 {
     font-size: 15px;
+    margin-bottom: 1px;
 }
 p
 {
@@ -35,6 +36,7 @@ header
 #logo > img
 {
     height: 40px;
+    object-fit: cover;
 }
 
 header > nav > ul
@@ -192,7 +194,7 @@ list-style: none;
 flex-wrap: wrap;
 padding: 0;
 }
-#partie2 > ul > li > div
+#partie2 > ul > li > .hebergement
 {
  margin-bottom: 30px;   
 background-color: white;
@@ -200,11 +202,16 @@ border-radius: 20px;
 padding: 3px;
 box-shadow: 2px 2px 20px rgb(190, 192, 194);
 line-height: 1.5px;
+width: auto;
+height: auto;
 }
 #partie2 > ul > li > .hebergement > img
 {
-    height: 120px;
+    width: 35vh;
     border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
 }
 .infoHotels
 {
@@ -233,6 +240,18 @@ aside
     padding-left: 20px;
     padding-right: 20px;
 }
+aside > div
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.fa-chart-line
+{
+    font-size: 20px ;
+    margin-right:30px;
+}
 aside > ul
 {
     display: flex;
@@ -248,7 +267,9 @@ aside > ul > li
     margin:15px 0;
     border-radius: 20px;
     box-shadow: 2px 2px 20px rgb(190, 192, 194);
-    padding-right: 70px;
+    width: auto;
+    height: auto;
+
 }
 .informations
 {
@@ -256,9 +277,10 @@ aside > ul > li
 }
  aside > ul > li > img
 {
-    height: 142px;
+    height: 17vh;
     border-radius: 20px 0px 0px 20px;
     margin: 3px;
+    object-fit: cover;
 }
 .section3
 {
@@ -280,21 +302,25 @@ margin: 15px 0px;
 border: 1px #F2F2F2 solid;
 border-radius: 20px;
 box-shadow: 5px 5px 10px #F2F2F2;
-
+width: auto;
+height: auto;
 }
 .section3 > ul > .activite > li > img
 {
-    height: 150px;
+    height: 20vh;
+    width: 45vh;
     border-radius: 20px 20px 0px 0px;
+
 }
 .section3 > ul > .activite > li > h5
 {
-    margin-top: 15px;
-    margin-bottom: 15px;
+   margin: 15px;
 }
 .section3 > ul > .grand > li > img
 {
-height: 380px;
+height: 50vh;
+width: 35vh;
+object-fit: cover;
 }
 .section3 > ul > .activite
 {
@@ -332,6 +358,10 @@ footer > div
         padding: 0;
         margin: 0;
     }
+    html 
+    {
+        width: 100%;
+    }
     main
     {
         padding-left: 0;
@@ -349,6 +379,16 @@ footer > div
     p
     {
         font-size: 20px;
+    }
+    header > nav > ul
+    {
+        flex-wrap: wrap-reverse;
+    }
+    header > nav > ul > li
+    {
+        display: flex; 
+        flex-direction: row;  
+        justify-content: space-between;
     }
     #vacances
     {
@@ -375,7 +415,6 @@ footer > div
     {
         width: 100%;
         border-radius: 0;
-        padding-right: 100%;
     }
     .section3
     {
