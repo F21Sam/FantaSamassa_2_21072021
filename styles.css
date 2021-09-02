@@ -12,8 +12,7 @@ h2
 }
 h4
 {
-    font-size: 15px;
-    margin-bottom: 1px;
+    font-size: 19px;
 }
 p
 {
@@ -108,7 +107,14 @@ main
     width: 100px;
     border: none;
     cursor: pointer;
-    
+}
+.visible-mobile
+{
+display: none;
+}
+.visible-pc
+{
+    display: inline;
 }
 #vacances
 {
@@ -194,6 +200,10 @@ list-style: none;
 flex-wrap: wrap;
 padding: 0;
 }
+#partie2 > ul > li 
+{
+    width: 31.33%;
+}
 #partie2 > ul > li > .hebergement
 {
  margin-bottom: 30px;   
@@ -207,7 +217,7 @@ height: auto;
 }
 #partie2 > ul > li > .hebergement > img
 {
-    width: 35vh;
+    width: 40vh;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
     max-width: 100%;
@@ -244,7 +254,7 @@ aside > div
 {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: baseline; 
     justify-content: space-between;
 }
 .fa-chart-line
@@ -275,6 +285,12 @@ aside > ul > li
 {
     padding-left: 10px;
 }
+aside > ul > li > .informations > h4
+{
+    margin-bottom: 0;
+    margin-top: 1px;
+    margin-right: 2px;
+}
  aside > ul > li > img
 {
     height: 17vh;
@@ -302,8 +318,6 @@ margin: 15px 0px;
 border: 1px #F2F2F2 solid;
 border-radius: 20px;
 box-shadow: 5px 5px 10px #F2F2F2;
-width: auto;
-height: auto;
 }
 .section3 > ul > .activite > li > img
 {
@@ -370,25 +384,38 @@ footer > div
     }
     h2
     {
-        font-size: 30px;
+        font-size: 25px;
     }
     h4
     {
-        font-size: 25px;
+        font-size: 20px;
     }
     p
     {
         font-size: 20px;
     }
-    header > nav > ul
+    header 
     {
-        flex-wrap: wrap-reverse;
+        padding-left: 15px;
     }
-    header > nav > ul > li
+    .section1
     {
-        display: flex; 
-        flex-direction: row;  
-        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: calc(    100% - 40px);
+    }
+    #recherche > .bouton-submit
+    {
+    border-radius: 10px 10px 10px 10px;
+    width: 50px;
+    }
+    .visible-mobile
+    {
+    display: inline;
+    }
+    .visible-pc
+    {
+        display: none;
     }
     #vacances
     {
@@ -398,6 +425,11 @@ footer > div
     #vacances > ul 
     {
         flex-wrap: wrap;
+        padding-left: 0;
+    }
+    #vacances > ul > div
+    {
+        margin-bottom: 20px;
     }
     .section2
     {
@@ -405,27 +437,54 @@ footer > div
     }
     .grandeSection
     {
-        width: 100%;
         flex-direction:column;
         border-radius:0;
-        padding-right: 100%;
-        
+        width:calc(100% - 60px) ;
+    }
+    #partie2 > ul > li {
+        width: 100%;
+    }
+    #partie2 > ul > li > .hebergement > img
+    {
+        height: 20vh;
+        width: 50vh;
+        object-fit: cover;
     }
     .section2 > aside
     {
-        width: 100%;
+        width:calc(100% - 40px) ;
         border-radius: 0;
+    }
+    aside > ul > li > img
+    {
+        height: 25vh;
+        width: 20vh;
+        object-fit: cover;
     }
     .section3
     {
-        flex-direction: column;
+        flex-direction: column; 
+        padding-left: 30px;
+        padding-right: 30px;
+        width:calc(100% - 60px) ;
+    }
+    .section3 > ul > .activite > li > img
+    {
+        height: 20vh;
+        width: 50vh;
+        object-fit: cover;
+    }
+    .section3 > ul > .grand > li > img
+    {
+        height: 20vh;
+        width: 50vh;
+        object-fit: cover;
     }
     footer 
     {
         flex-direction: column;
-        width: 100%;
+        width:calc(100% - 80px) ;
         padding: 40px;
-        padding-right: 100%;
     }
     footer > div
     {
