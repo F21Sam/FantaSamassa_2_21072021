@@ -215,8 +215,6 @@ border-radius: 20px;
 padding: 3px;
 box-shadow: 2px 2px 20px rgb(190, 192, 194);
 line-height: 1.5px;
-width: auto;
-height: auto;
 }
 #partie2 > ul > li > .hebergement > img
 {
@@ -280,9 +278,9 @@ aside > ul > li
     margin:15px 0;
     border-radius: 20px;
     box-shadow: 2px 2px 20px rgb(190, 192, 194);
-    width: auto;
-    height: auto;
-
+    width: 100%;
+    height: 33.33%;
+    
 }
 .informations
 {
@@ -291,12 +289,12 @@ aside > ul > li
 aside > ul > li > .informations > h4
 {
     margin-bottom: 0;
-    margin-top: 1px;
+    margin-top: 5px;
     margin-right: 2px;
 }
  aside > ul > li > img
 {
-    height: 17vh;
+    height: 20vh;
     border-radius: 20px 0px 0px 20px;
     margin: 3px;
     object-fit: cover;
@@ -402,6 +400,7 @@ footer > div
         flex-direction: column;
         padding-left: 15px;
         padding-right: 15px;
+        width: calc(100% - 30px);
     }
     header > nav > ul
     {
@@ -411,7 +410,8 @@ footer > div
     {
         border-bottom: 3px #F2F2F2 solid;
         padding-bottom: 10px;
-        padding-right: 40px;ju
+        padding-right: 40px;
+        width: calc(100% - 40px);
     }
     header > nav > ul > li > a:hover
     {
@@ -426,15 +426,14 @@ footer > div
     header > nav > ul > div > li > a
     {
         position: relative;
-        bottom: 40px;
-        right: 60px;
+        bottom: 45px;
+        right: 75px;          
         padding: 0;
     }
     .section1
     {
         padding-left: 20px;
         padding-right: 20px;
-        width: calc(100% - 40px);
     }
     #recherche
     {
