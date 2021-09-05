@@ -4,7 +4,10 @@ body
     font-family : 'Raleway', sans-serif ;
     margin: 0;
 }
-
+h1
+{
+    margin-bottom: 0;
+}
 h2
 {
     font-size: 20px;
@@ -392,17 +395,51 @@ footer > div
     }
     p
     {
-        font-size: 20px;
+        font-size: 18px;
     }
     header 
     {
+        flex-direction: column;
         padding-left: 15px;
+        padding-right: 15px;
+    }
+    header > nav > ul
+    {
+        padding: 0;
+    }
+    header > nav > ul > li > a
+    {
+        border-bottom: 3px #F2F2F2 solid;
+        padding-bottom: 10px;
+        padding-right: 40px;ju
+    }
+    header > nav > ul > li > a:hover
+    {
+        color: black;
+        border-top: none;
+    }
+    header > nav > ul > li > a:active
+    {
+        color:#0065FC ;
+        border-bottom: 2px #0065FC solid;
+    }
+    header > nav > ul > div > li > a
+    {
+        position: relative;
+        bottom: 40px;
+        right: 60px;
+        padding: 0;
     }
     .section1
     {
         padding-left: 20px;
         padding-right: 20px;
-        width: calc(    100% - 40px);
+        width: calc(100% - 40px);
+    }
+    #recherche
+    {
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     #recherche > .bouton-submit
     {
@@ -426,10 +463,16 @@ footer > div
     {
         flex-wrap: wrap;
         padding-left: 0;
+        margin-top: 0;
     }
     #vacances > ul > div
     {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+    }
+    #vacances > h5
+    {
+        font-size: 17px;
+        margin: 2px;
     }
     .section2
     {
@@ -471,13 +514,13 @@ footer > div
     .section3 > ul > .activite > li > img
     {
         height: 20vh;
-        width: 50vh;
+        width: 47vh;
         object-fit: cover;
     }
     .section3 > ul > .grand > li > img
     {
         height: 20vh;
-        width: 50vh;
+        width: 47vh;
         object-fit: cover;
     }
     footer 
