@@ -48,18 +48,18 @@
         flex-direction: row;   
         list-style: none;
     }
-    header > nav > ul > li > a
+    header > nav > ul > .ancre > a
     {
         padding: 30px;
         text-decoration: none;
         color: black;
     }
-    header > nav > ul > li > a:hover
+    header > nav > ul > .ancre > a:hover
     {
         color: #0065FC;
         border-top: 1px #0065FC solid;
     }
-    header > nav > ul > div > li > a
+    header > nav > ul > .s-inscrire > a
     {
         color:#0065FC;
         font-weight: bold;
@@ -82,7 +82,6 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        width: 400px; 
     }
     #recherche > .map
     {
@@ -133,7 +132,7 @@
         justify-content: space-between;
         list-style: none;
     }
-    #vacances > ul > div
+    #vacances > ul > li
     {
         display: flex;
         flex-direction: row;
@@ -144,11 +143,12 @@
         border-radius: 20px;
         border-left: none;
     }
-    #vacances > ul > div > li
+    #vacances > ul > li > p
     {
     padding-left: 15px;
     padding-right: 15px;
     font-weight: bold;
+    margin: 0;
     
     }
     .icone
@@ -240,7 +240,7 @@
     }
     .inactive
     {
-        color: #F2F2F2;
+        color: rgb(190, 192, 194);
     }
     aside
     {
@@ -315,34 +315,36 @@
     justify-content: space-between;
     padding: 0;
     }
-    .section3 > ul > .activite > li
+    .section3 > ul > li > div
     {
     margin: 15px 0px;
     border: 1px #F2F2F2 solid;
     border-radius: 20px;
     box-shadow: 5px 5px 10px #F2F2F2;
     }
-    .section3 > ul > .activite > li > img
+    .section3 > ul > .activite > div > img
     {
         height: 20vh;
-        width: 45vh;
+        width: 44vh;
         border-radius: 20px 20px 0px 0px;
     
     }
-    .section3 > ul > .activite > li > h5
+    .section3 > ul > .activite > div > h5
     {
        margin-left: 15px;
     }
-    .section3 > ul > .grand > li > img
+    .section3 > ul > .grand  > div > img
     {
-    height: 50vh;
-    width: 35vh;
-    object-fit: cover;
+        height: 55vh;
+        width: 40vh;
+        object-fit: cover;
+        border-radius: 20px 20px 0px 0px;
     }
-    .section3 > ul > .activite
+    .section3 > ul >.activite
     {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
     }
     /*pieds de page*/
     footer
@@ -393,6 +395,10 @@
     {
         font-size: 18px;
     }
+    #logo > img
+    {
+        height: 50px;
+    }
     header 
     {
         flex-direction: column;
@@ -403,29 +409,35 @@
     header > nav > ul
     {
         padding: 0;
-        width: auto;
+        width: 100%;
     }
-    header > nav > ul > li > a
+    header > nav > ul > .ancre 
+    {
+        width: 50%;
+        justify-content: space-between;
+    }
+    header > nav > ul > .ancre > a
     {
         border-bottom: 3px #F2F2F2 solid;
         padding-bottom: 10px;
-        padding-right: 40px;
+        padding-right: 80px;
+        padding-left: 40px;
     }
-    header > nav > ul > li > a:hover
+    header > nav > ul > .ancre > a:hover
     {
         color: black;
         border-top: none;
     }
-    header > nav > ul > li > a:active
+    header > nav > ul > .ancre > a:active
     {
         color:#0065FC ;
-        border-bottom: 2px #0065FC solid;
+        border-bottom: 3px #0065FC solid;
     }
-    header > nav > ul > div > li > a
+    header > nav > ul > .s-inscrire > a
     {
-        position: relative;
-        bottom: 45px;
-        right: 35px;          
+        position: absolute;
+        top: 35px;
+        right: 25px;          
         padding: 0;
     }
     .section1
@@ -437,7 +449,6 @@
     {
         margin-top: 20px;
         margin-bottom: 20px;
-        width: calc(100% - 400px);
     }
     #recherche > .bouton-submit
     {
@@ -461,9 +472,8 @@
     {
         flex-wrap: wrap;
         padding-left: 0;
-        margin-top: 0;
     }
-    #vacances > ul > div
+    #vacances > ul > li
     {
         margin-bottom: 10px;
     }
@@ -484,14 +494,18 @@
     }
     #partie2 > ul > li
     {
+        height: 16%;
         width: 100%;
+    }
+    #partie2 > ul > li > .hebergement > .infoHotels
+    {
+        line-height: 1px;
     }
     #partie2 > ul > li > .hebergement > img
     {
-        height: 20vh;
-        width: 50vh;
+        height: 15vh;
+        width: 80vh;
         object-fit: cover;
-        width: auto;
     }
     .section2 > aside
     {
@@ -500,28 +514,34 @@
     }
     aside > ul > li > img
     {
-        height: 25vh;
+        height: 20vh;
         width: 20vh;
         object-fit: cover;
+        margin: 5px;
     }
     .section3
     {
         flex-direction: column; 
-        padding-left: 15px;
-        padding-right: 15px;
-        width:calc(100% - 30px) ;
+        padding-left: 20px;
+        padding-right: 20px;
+        width:calc(100% - 40px) ;
     }
-    .section3 > ul > .activite > li > img
+    .section3 > ul > .activite > div > img
     {
         height: 20vh;
-        width: 47vh;
+        width: 50vh;
         object-fit: cover;
     }
-    .section3 > ul > .grand > li > img
+    .section3 > ul > .grand > div > img
     {
         height: 20vh;
-        width: 47vh;
+        width: 50vh;
         object-fit: cover;
+    }
+    .section3 > ul > li > div > h5
+    {
+        font-weight: bold;
+        font-size: 14px;
     }
     footer 
     {
@@ -547,7 +567,7 @@
     
     /*VERSION TABLETTE*/
 }
-@media screen  and (min-width :763px) and (max-width:962px) 
+@media screen  and (min-width :763px) and (max-width:992px) 
 {
     h2
     {
@@ -569,23 +589,23 @@
     {
         justify-content: space-between;
     }
-    header > nav > ul > li > a:hover
+    header > nav > ul > .ancre > a:hover
     {
         color: black;
         border-top: none;
     }
-    header > nav > ul > li > a:active
+    header > nav > ul > .ancre > a:active
     {
         color:#0065FC ;
         border-bottom: 2px #0065FC solid;
     }
-    header > nav > ul > li > a
+    header > nav > ul > .ancre > a
     {
         border-bottom: 3px #F2F2F2 solid;
         padding-bottom: 10px;
         padding-right: 30px;
     }
-    #vacances > ul > div
+    #vacances > ul > li 
     {
         align-items: center;
         margin-right: 5px;
@@ -593,7 +613,7 @@
     }
     .section2
     {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .grandeSection
     {
@@ -634,26 +654,31 @@
     {
         width:calc(100% - 40px) ;
         border-radius: 20px;
-        margin-top: 20px;
+        margin-bottom: 20px;
     }
     aside > ul
     {
         display: flex;
-        flex-direction:row;
+        flex-direction:column;
         justify-content: space-between;
     }
     aside > ul > li
     {
-        width: 32.33%;
+        width: 100%;
     }
     aside > ul > li > img
     {
-        height: 30vh;
-        width: 15vh;
+        height: 25vh;
+        width: 45vh;
         object-fit: cover;
     }
     aside > ul > li > .informations > h4
 {
     margin-top: 20px;
+    font-size: 25px;
+}
+aside > ul > li > .informations > p
+{
+    font-size: 20px;
 }
 }
