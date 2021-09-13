@@ -113,7 +113,7 @@
     }
     .visible-mobile
     {
-    display: none;
+        display: none;
     }
     .visible-pc
     {
@@ -145,10 +145,10 @@
     }
     #vacances > ul > li > p
     {
-    padding-left: 15px;
-    padding-right: 15px;
-    font-weight: bold;
-    margin: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-weight: bold;
+        margin: 0;
     
     }
     .icone
@@ -156,7 +156,7 @@
         color:#0065FC ;
         padding:15px 15px 15px 15px ;
         border-radius: 50px;
-       background-color: #DEEBFF ; 
+        background-color: #DEEBFF ; 
     }
     .info-content
     {
@@ -197,12 +197,12 @@
     }
     #partie2 > ul
     {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style: none;
-    flex-wrap: wrap;
-    padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+        flex-wrap: wrap;
+        padding: 0;
     }
     #partie2 > ul > li 
     {
@@ -210,12 +210,12 @@
     }
     #partie2 > ul > li > .hebergement
     {
-     margin-bottom: 30px;   
-    background-color: white;
-    border-radius: 20px;
-    padding: 3px;
-    box-shadow: 2px 2px 20px rgb(190, 192, 194);
-    height: 90%;
+        margin-bottom: 30px;   
+        background-color: white;
+        border-radius: 20px;
+        padding: 3px;
+        box-shadow: 2px 2px 20px rgb(190, 192, 194);
+        height: 90%;
     }
     #partie2 > ul > li > .hebergement > img
     {
@@ -303,24 +303,24 @@
     }
     .section3
     {
-    display: flex;
-    flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
     .section3 > ul 
     {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0;
     }
     .section3 > ul > li > div
     {
-    margin: 15px 0px;
-    border: 1px #F2F2F2 solid;
-    border-radius: 20px;
-    box-shadow: 5px 5px 10px #F2F2F2;
+        margin: 15px 0px;
+        border: 1px #F2F2F2 solid;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px #F2F2F2;
     }
     .section3 > ul > .activite > div > img
     {
@@ -331,7 +331,7 @@
     }
     .section3 > ul > .activite > div > h5
     {
-       margin-left: 15px;
+        margin-left: 15px;
     }
     .section3 > ul > .grand  > div > img
     {
@@ -349,7 +349,7 @@
     /*pieds de page*/
     footer
     {
-       background-color: #F2F2F2; 
+        background-color: #F2F2F2; 
         display: flex;
         flex-direction:row;
         justify-content: space-between;
@@ -420,8 +420,8 @@
     {
         border-bottom: 3px #F2F2F2 solid;
         padding-bottom: 10px;
-        padding-right: 80px;
-        padding-left: 40px;
+        padding-right: 70px;
+        padding-left: 50px;
     }
     header > nav > ul > .ancre > a:hover
     {
@@ -452,12 +452,12 @@
     }
     #recherche > .bouton-submit
     {
-    border-radius: 10px 10px 10px 10px;
-    width: 50px;
+        border-radius: 10px 10px 10px 10px;
+        width: 50px;
     }
     .visible-mobile
     {
-    display: inline;
+        display: inline;
     }
     .visible-pc
     {
@@ -636,12 +636,12 @@
     }
     #partie2 > ul
     {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style: none;
-    flex-wrap: wrap;
-    padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+        flex-wrap: wrap;
+        padding: 0;
     }
     #partie2 > ul > li > .hebergement > img
     {
@@ -669,16 +669,16 @@
     aside > ul > li > img
     {
         height: 25vh;
-        width: 45vh;
+        width: 30vh;
         object-fit: cover;
     }
     aside > ul > li > .informations > h4
-{
-    margin-top: 20px;
-    font-size: 25px;
-}
-aside > ul > li > .informations > p
-{
-    font-size: 20px;
-}
+    {
+        margin-top: 20px;
+        font-size: 25px;
+    }
+    aside > ul > li > .informations > p
+    {
+        font-size: 20px;
+    }
 }
