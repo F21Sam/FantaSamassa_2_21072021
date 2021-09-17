@@ -16,7 +16,7 @@
     }
     h4
     {
-        font-size: 19px;
+        font-size: 18px;
     }
     p
     {
@@ -140,7 +140,7 @@
         margin-right: 20px;
         margin-left: 10px;
         border: 2px rgb(231, 232, 233) solid;
-        border-radius: 20px;
+        border-radius: 50px;
         border-left: none;
     }
     #vacances > ul > li > p
@@ -154,9 +154,12 @@
     .icone
     {
         color:#0065FC ;
-        padding:15px 15px 15px 15px ;
+        width:50px ;
+        height:50px ;
         border-radius: 50px;
-        background-color: #DEEBFF ; 
+        background-color: #DEEBFF ;
+        align-items: center; 
+        font-size: 20px;
     }
     .info-content
     {
@@ -213,7 +216,7 @@
         margin-bottom: 30px;   
         background-color: white;
         border-radius: 20px;
-        padding: 3px;
+        padding: 5px;
         box-shadow: 2px 2px 20px rgb(190, 192, 194);
         height: 90%;
     }
@@ -228,7 +231,7 @@
     .infoHotels
     {
         padding-left: 10px;
-        padding-bottom: 5px;
+        line-height:3px;
     }
     .fa-star
     {
@@ -262,7 +265,6 @@
     .fa-chart-line
     {
         font-size: 20px ;
-        margin-right:30px;
     }
     aside > ul
     {
@@ -286,6 +288,7 @@
     .informations
     {
         padding-left: 10px;
+        padding-right: 20px;
     }
     aside > ul > li > .informations > h4
     {
@@ -293,16 +296,21 @@
         margin-top: 5px;
         margin-right: 2px;
     }
+    .informations > div
+    {
+        margin-top: 50px;
+    }
      aside > ul > li > img
     {
-        height: 25vh;
-        width: 20vh;
+        height: 94%;
+        width: 40%;
         border-radius: 20px 0px 0px 20px;
-        margin: 3px;
+        margin: 5px;
         object-fit: cover;
     }
     .section3
     {
+        margin-top: 30px;
         display: flex;
         flex-direction: column;
     }
@@ -315,6 +323,10 @@
         justify-content: space-between;
         padding: 0;
     }
+    .section3 > ul > li
+    {
+        width: 23%;
+    }
     .section3 > ul > li > div
     {
         margin: 15px 0px;
@@ -324,10 +336,9 @@
     }
     .section3 > ul > .activite > div > img
     {
-        height: 20vh;
-        width: 44vh;
+        width: 100%;
         border-radius: 20px 20px 0px 0px;
-    
+        object-fit: cover;
     }
     .section3 > ul > .activite > div > h5
     {
@@ -335,8 +346,7 @@
     }
     .section3 > ul > .grand  > div > img
     {
-        height: 55vh;
-        width: 40vh;
+        width: 100%;
         object-fit: cover;
         border-radius: 20px 20px 0px 0px;
     }
@@ -504,7 +514,7 @@
     #partie2 > ul > li > .hebergement > img
     {
         height: 15vh;
-        width: 80vh;
+        width: 100%;
         object-fit: cover;
     }
     .section2 > aside
@@ -512,12 +522,9 @@
         width:calc(100% - 40px) ;
         border-radius: 0;
     }
-    aside > ul > li > img
+    .informations > div
     {
-        height: 20vh;
-        width: 20vh;
-        object-fit: cover;
-        margin: 5px;
+        margin-top: 50px;
     }
     .section3
     {
@@ -526,16 +533,20 @@
         padding-right: 20px;
         width:calc(100% - 40px) ;
     }
+    .section3 > ul > li
+    {
+        width: 100%;
+    }
     .section3 > ul > .activite > div > img
     {
         height: 20vh;
-        width: 50vh;
+        width: 100%;
         object-fit: cover;
     }
     .section3 > ul > .grand > div > img
     {
         height: 20vh;
-        width: 50vh;
+        width: 100%;
         object-fit: cover;
     }
     .section3 > ul > li > div > h5
@@ -591,7 +602,8 @@
     }
     header > nav > ul > .ancre > a:hover
     {
-        color: black;
+        color:#0065FC ;
+        border-bottom: 2px #0065FC solid;
         border-top: none;
     }
     header > nav > ul > .ancre > a:active
@@ -625,9 +637,12 @@
     {
         height: 90%;
     }
+    ul > li > .hebergement > .infoHotels
+    {
+        line-height: 18px;
+    }
     ul > li > .hebergement > .infoHotels > h4
     {
-        margin-top: 0;
         margin-bottom: 0;
     }
     #partie2 > ul > li > .hebergement
@@ -681,4 +696,41 @@
     {
         font-size: 20px;
     }
+    .section3 > ul > li
+    {
+        width: 40%;
+    }
+    .section3 > ul > .activite > div > img
+    {
+        height: 30vh;
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+        object-fit: cover;
+    }
+    .section3 > ul > .grand  > div > img
+    {
+        height: 80vh;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px 20px 0px 0px;
+        object-fit: cover;
+    }
+}
+@media screen  and (min-width:992px) and (max-width:1121px) 
+{
+    .infoHotels
+    {
+        line-height:18px;
+    }  
+}
+@media (max-width:417px)
+{
+    aside > ul > li > img
+    {
+        height: 180px;
+    } 
+    .infoHotels
+    {
+        line-height:25px;
+    }    
 }
