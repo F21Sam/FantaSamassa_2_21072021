@@ -160,6 +160,31 @@
         background-color: #DEEBFF ;
         align-items: center; 
         font-size: 20px;
+        text-align: center;
+    }
+    .fa-money-bill-wave:before
+    {
+        content: "\f53a";
+        position: relative;
+        top: 14px;
+    }
+    .fa-heart:before
+    {
+        content: "\f004";
+        position: relative;
+        top: 15px;
+    }
+    .fa-dog:before 
+    {
+        content: "\f6d3";
+        position: relative;
+        top: 14px;
+    }
+    .fa-child:before
+    {
+        content: "\f1ae";
+        position: relative;
+        top: 14px;
     }
     .info-content
     {
